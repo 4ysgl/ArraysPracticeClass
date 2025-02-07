@@ -1,8 +1,15 @@
 
-import java.util.Arrays;
+
 
 public class ArraysMetods
 {
+
+
+
+
+
+
+
 
     void minMaxİndex(int[] list)
     {   int min=list[0];
@@ -36,27 +43,19 @@ for (int i=1;i<list.length;i++)
     }
 }
         System.out.println(min+" EN KÜÇÜK VE İNDEX  "+minIndex);
-        System.out.print(max+" EN BUYUK VE İNDEX  "+maxIndex);
+        System.out.println(max+" EN BUYUK VE İNDEX  "+maxIndex);
     }
 
+       // Dizideki Elemanların Ortalamasını Hesaplayan method
+       void ListAverage ( int[] list)
+       {
+           int sum = 0;
+           for (int i = 0; i < list.length; i++) {
+               sum += list[i];
+           }
+           int average = sum / list.length;
+           System.out.println("DİZİNİN ORTALAMASI  : " + average);
+       }
 
 
-
-
-
-
-
-
-    // Dizideki Elemanların Ortalamasını Hesaplayan method 
-    void ListAverage(int[] list)
-    { int sum=0;
-for (int i=0;i<list.length;i++)
-        {
-           sum+=list[i];
-        }
-int average=sum/list.length;
-        System.out.println("DİZİNİN ORTALAMASI  : "+average);
-    }
-
-
-}
+   }

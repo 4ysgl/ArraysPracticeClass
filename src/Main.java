@@ -3,15 +3,33 @@
 public class Main {
     public static void main(String[] args)
     {
+
          int [] list1={ 1,5,4,5,-5,10,8,6};
 
-         ArraysMetods met=new ArraysMetods();
-
-
+        ArraysMetods met=new ArraysMetods();
       /*   met.ListAverage(list1);*/ // dizinin ortalamasını bulma
-        met.minMaxİndex(list1);
+        /*met.minMaxİndex(list1);*/
+        String[][] letter = new String[5][4];
 
+        for (int i = 0; i < letter.length; i++) {
+            for (int j = 0; j < letter[i].length; j++) {
+                if (i == 0 || i == 2 || i==4) {
+                    letter[i][j] = " * ";
+                } else if (j == 0 || j == 3 || j==1) {
+                    letter[i][j] = " * ";
+                } else {
+                    letter[i][j] = "   ";
+                }
+            }
+        }
 
-
+        for (String[] row : letter){
+            for (String col : row){
+                System.out.print(col);
+            }
+            System.out.println();
+        }
     }
+
+
 }
