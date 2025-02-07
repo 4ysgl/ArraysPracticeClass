@@ -7,10 +7,6 @@ public class ArraysMetods
 
 
 
-
-
-
-
     void minMaxİndex(int[] list)
     {   int min=list[0];
         int max=list[0];
