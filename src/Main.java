@@ -9,15 +9,16 @@ public class Main {
         ArraysMetods met=new ArraysMetods();
       /*   met.ListAverage(list1);*/ // dizinin ortalamasını bulma
         /*met.minMaxİndex(list1);*/
-        String[][] letter = new String[5][4];
+        String[][] letter = new String[7][6];
 
         for (int i = 0; i < letter.length; i++) {
             for (int j = 0; j < letter[i].length; j++) {
-                if (i == 0 || i == 2 || i==4) {
+                if (i == 0 || i == 1 || i==4|| i==3 ) {
                     letter[i][j] = " * ";
-                } else if (j == 0 || j == 3 || j==1) {
+                } else if (j == 0  || j==1|| j==4|| j==5 ) {
                     letter[i][j] = " * ";
-                } else {
+                }
+                else {
                     letter[i][j] = "   ";
                 }
             }
